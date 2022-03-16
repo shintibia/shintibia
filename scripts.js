@@ -104,4 +104,4 @@ function closeNav(e) {
 
 }
 
-window.onload = init
+window.onload = drawImage
