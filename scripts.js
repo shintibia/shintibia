@@ -12,6 +12,7 @@ const options = {
 }
 let observer = new IntersectionObserver(navCheck, options)
 const navbar = document.querySelector('.navbar-nav')
+const copyIcon = document.querySelectorAll('.copy-icon')
 
 window.addEventListener('DOMContentLoaded', startApp)
 hamburger.addEventListener('click', mobileNav)
@@ -50,7 +51,11 @@ function copyInfo() {
             contactInfo[i].select();
             contactInfo[i].setSelectionRange(0, 99999);
             navigator.clipboard.writeText(contactInfo[i].value);
-            console.log(contactInfo[i].value)
+        })
+        copyIcon[i].addEventListener('click', function () {
+            contactInfo[i].select();
+            contactInfo[i].setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(contactInfo[i].value);
         })
     }
 }

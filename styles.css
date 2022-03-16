@@ -311,15 +311,30 @@ li.nav-item:not(:last-child) {
 }
 
 .contact-info {
-    width: 100%;
+    /* width: 100%; */
     /* background-color: var(--dark); */
     border: none;
     color: var(--text);
     cursor: pointer;
+    position: relative;
+}
+
+#contact-phone {
+    width: 200px;
 }
 
 .contact-info::before {
     contain: attr(data-tooltip);
+}
+
+.copy-icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.copy-icon:active {
+    opacity: .5;
 }
 
 
