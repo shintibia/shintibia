@@ -1,7 +1,7 @@
 import { equip, equipUrl } from './items.js'
 
 const canvas = document.getElementById('canvas1')
-const character = document.getElementById('dark-wizard')
+export const character = document.getElementById('dark-wizard')
 const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 60
 const CANVAS_HEIGHT = canvas.height = 104

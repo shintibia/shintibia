@@ -1,4 +1,4 @@
-import { animate, drawImage } from "./character.js"
+import { animate, drawImage, character } from "./character.js"
 import { loadTech, saveEquip, saveTech, suggest } from "./items.js"
 import { loadProjects, projectItems } from "./projects.js"
 
@@ -14,6 +14,7 @@ let observer = new IntersectionObserver(navCheck, options)
 const navbar = document.querySelector('.navbar-nav')
 const copyIcon = document.querySelectorAll('.copy-icon')
 
+character.onload = drawImage
 window.addEventListener('DOMContentLoaded', startApp)
 hamburger.addEventListener('click', mobileNav)
 document.addEventListener('click', closeNav)
