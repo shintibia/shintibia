@@ -1,29 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="/animation.css">
+    <link rel="stylesheet" href="./responsive.css">
     <title>shintibia</title>
 </head>
+
 <body>
-    <header></header>
-    <div class="main">
-        <div class="main__head">
-            <h1>PHAM QUANG DUY</h1>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand container-fluid pt-0 pb-0">
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-        <div class="main__content">
-            <div class="projects">
-                <p>My projects</p>
-                <ul>
-                    <li><a href="https://shintibia.github.io/my-todo-list" target="_blank">Todo app</a></li>
-                    <li><a href="https://shintibia.github.io/sputifa" target="_blank">Sputifa</a></li>
-                    <li><a href="https://shintibia.github.io/harley-phake" target="_blank">Harley Davison VN</a></li>
-                    <li><a href="https://shintibia.github.io/mario-on-rush" target="_blank">Mario</a></li>
-                </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a data-page="home" href="#home" class="nav-link">
+                    <img src="./data/img/nav/homepixel.png" alt="">HOME
+                </a>
+            </li>
+            <li class="nav-item">
+                <a data-page="about" href="#about" class="nav-link">
+                    <img src="./data/img/nav/aboutpixel.png" alt="">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a data-page="projects" href="#projects" class="nav-link">
+                    <img src="./data/img/nav/gearpixel.png" alt="">PROJECT</a>
+            </li>
+            <li class="nav-item">
+                <a data-page="contact" href="#contact" class="nav-link">
+                    <img src="./data/img/nav/phonepixel.png" alt="">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://drive.google.com/uc?id=1peSm2SgvGOKFZDg2DatE72b_hncHpEMw&export=download" id="resume" class="nav-link" title="Download resume">
+                    <img src="./data/img/nav/downloadpixel.png" alt="">RESUME</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="root" id="fullpage">
+        <!-- home -->
+        <div data-index="0" class="home-page full-height" id="home">
+
+
+
+            <!-- Greeting box -->
+            <div class="row home-content w-100 justify-content-center flex-column align-items-center">
+                <div class="container-xl">
+                    <div class="row dialogue-box">
+                        <div class="greeting-chat col row">
+                            <div class="col-5 p-0 usel"></div>
+                            <div class="col p-0">
+                                <p class="greeting-text">
+                                    <span class="greeting-text__first-line">Hello!</span><br>
+                                    <span class="greeting-text__second-line">My name is Pham Quang Duy.</span><br>
+                                    <span class="greeting-text__third-line">Self-taught FE web developer.</span><br>
+                                    <span class="greeting-text__fourth-line">Welcome to my portfolio.</span>
+                                    <img src="./data/img/cat1.png" alt="" class="cat-emoji">
+                                </p>
+                                <div class="p-0 m-0 social-content">
+                                    <div class="">
+                                        <a href="https://www.facebook.com/shin.tibia/" class="social-icon"
+                                            target="_blank">
+                                            <img src="./data/img/fbpixel.png" alt="./data/img/githubpixel.png">
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="https://www.github.com/shintibia/" class="social-icon" target="_blank">
+                                            <img src="./data/img/githubpixelw.png" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="triangle-down"></div>
+                            <img src="./data/img/avt.png" alt="" class="col-5">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!-- about -->
+        <div data-index="1" class="about-page full-height" id="about">
+            <!-- about-content -->
+            <div class="row about-content w-100 justify-content-center flex-column align-items-center">
+                <div class="container-xl">
+                    <div class="row character-container text-center w-100 m-0 p-0">
+                        <div class="col-xl about-text p-0">
+                            <!-- about-texts -->
+                            <!-- <div class="row m-0 justify-content-center about-text_title">About</div> -->
+                            <div class="row m-0 text-start p-2">
+                                <h4 class="m-0 p-0">PHAM QUANG DUY</h4>
+                                <p class="text-primary p-0 mb-2">Front End web developer</p>
+                                <p class="m-0 p-0">Who has been afraid of programming in the past.
+                                    Thought it was something so difficult and only suitable for geniuses. But once he
+                                    started to learn it,
+                                    he quickly realized that programming is really hard but it's also interesting as
+                                    well
+                                    and the most important thing is that programming isn't scary after all.
+                                    He just need to learn the basic to understand it.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col-xl character-col d-flex flex-column justify-content-center">
+                            <div class="row justify-content-center canvas-container">
+                                <div class="col-12 p-0 d-flex justify-content-center">
+                                    <canvas id="canvas1" class="">
+                                        <img src="./data/img/idle/Idlebw.png" alt="idle" id="dark-wizard">
+                                    </canvas>
+                                </div>
+                            </div>
+                            <!-- equipments -->
+                            <div class="equipment row justify-content-center pt-2 pb-2">
+                                <div class="col equip" style="background-size: contain;"
+                                    data-equip="html" id="html">
+                                </div>
+                                <div class="col equip" style="background-size: contain;"
+                                    data-equip="css" id="css">
+                                </div>
+                                <div class="col equip" style="background-size: contain;"
+                                    data-equip="js" id="js">
+                                </div>
+                                <div class="col equip" style="background-size: contain;"
+                                    data-equip="any" id="other">
+                                </div>
+                                <div class="col equip" style="background-size: contain;"
+                                    data-equip="any" id="other">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- inventory -->
+                        <div class="col-xl inventory p-0">
+                            <div class="row m-0 justify-content-center inventory__title">Technologies</div>
+                            <div class="inventory-content d-flex justify-content-center align-items-center">
+                                <div class="row technologies m-0 p-2">
+
+                                    <div class="col d-flex justify-content-center align-items-center">
+                                        <div class="row m-0 p-1 d-flex justify-content-center" style="max-width:270px">
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                            <div class="slot p-0"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="suggestion hide">Equip me some</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- projects -->
+        <div data-index="2" class="projects-page full-height" id="projects">
+            <!-- projects-content -->
+            <div class="row about-content w-100 justify-content-center flex-column align-items-center">
+                <div class="container-xl h-100 d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-center flex-column align-items-start">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <span class="projects-title p-1">PROJECTS</span>
+                            <div class="triangle-up m-0"></div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0">
+                        <div class="col projects-content p-2">
+                            <!-- PROJECT-ITEM -->
+                            <div class="row m-0 p-0 d-flex justify-content-center">
+                                <div class="row m-0 p-0 d-flex justify-content-center project-container">
+                                    <a href="" class="project-item m-1 disabled" target="_blank">
+                                        <div class=""></div>
+                                    </a>
+                                    <a href="" class="project-item m-1 disabled" target="_blank">
+                                        <div class=""></div>
+                                    </a>
+                                    <a href="" class="project-item m-1 disabled" target="_blank">
+                                        <div class=""></div>
+                                    </a>
+                                    <a href="" class="project-item m-1 disabled" target="_blank">
+                                        <div class=""></div>
+                                    </a>
+                                    <!-- <a href="" class="project-item m-1 disabled" target="_blank">
+                                        <div class=""></div>
+                                    </a>
+                                    <a href="" class="project-item m-1 disabled" target="_blank">
+                                        <div class=""></div>
+                                    </a> -->
+                                </div>
+
+                                <!-- PAGES -->
+                                <!-- <div class="row m-0 p-1 d-flex justify-content-center text-center">
+                                    <div class="border page-btn" style="width: 40px; line-height: 2.2;">1</div>
+                                    <div class="border page-btn" style="width: 40px; line-height: 2.2;">2</div>
+                                    <div class="border page-btn" style="width: 40px; line-height: 2.2;">3</div>
+                                    <div class="border page-btn" style="width: 40px; line-height: 2.2;">4</div>
+                                    <div class="border page-btn" style="width: 40px; line-height: 2.2;">5</div>
+                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- contact -->
+            <!-- <div class="contact-page full-height" id="contact"> -->
+            <!-- contact-content -->
+            <!-- <div class="row contact-content w-100 justify-content-center flex-column align-items-center">
+                <div class="container-xl border">contact</div>
+            </div>
+        </div> -->
+
+
+        </div>
+
+        <!-- contact -->
+        <div data-index="3" class="contact-page full-height" id="contact">
+            <!-- contact-content -->
+            <div class="row about-content w-100 justify-content-center flex-column align-items-center">
+                <div class="container-xl h-100 d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-center flex-column align-items-start">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <span class="contact-title p-1">CONTACT</span>
+                            <div class="triangle-up m-0 contact-triangle"></div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0">
+                        <div class="col contact-content p-0">
+                            <div class="row m-0 p-0">
+                                <div class="col-lg contact-piece text-center p-2">
+                                    <img src="./data/img/contact/smartphone.png" alt=""
+                                        style="width: 100px; height: 100px;">
+                                    <p class="m-0">Phone</p>
+                                    <input style="text-align: center;" type="text" id="contact-phone"
+                                        data-tooltip="Click to copy" title="Click to copy"
+                                        class="m-0 text-dark contact-info" value="(+84) 869 253 244" readonly>
+                                </div>
+                                <div class="col-lg contact-piece text-center p-2">
+                                    <img src="./data/img/contact/gmail.png" alt="" style="width: 100px; height: 100px;">
+                                    <p class="m-0">Mail</p>
+                                    <input style="text-align: center;" type="text" id="contact-phone"
+                                        data-tooltip="Click to copy" title="Click to copy"
+                                        class="m-0 text-dark contact-info" value="phamduy1590@gmail.com" readonly>
+                                </div>
+                                <div class="col-lg contact-piece text-center p-2">
+                                    <img src="./data/img/contact/social.png" alt=""
+                                        style="width: 100px; height: 100px;">
+                                    <p class="m-0">Social</p>
+                                    <input style="text-align: center;" type="text" id="contact-phone"
+                                        data-tooltip="Click to copy" title="Click to copy"
+                                        class="m-0 text-dark contact-info" value="fb.com/shintibia" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
-    <div class="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts.js" type="module"></script>
 </body>
+
 </html>

@@ -1,0 +1,168 @@
+:root {
+    --delay: 1s;
+    --bgcolor: #1F1B24
+}
+
+.greeting-text__first-line {
+    position: relative;
+}
+
+.greeting-text__first-line::before,
+.greeting-text__first-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.greeting-text__first-line::before {
+    --steps: 6;
+    background-color: var(--bgcolor);
+    animation: typewriter calc(var(--steps)*0.05s) var(--delay) steps(var(--steps)) forwards;
+}
+
+
+/* second */
+.greeting-text__second-line {
+    position: relative;
+}
+
+.greeting-text__second-line::before,
+.greeting-text__second-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.greeting-text__second-line::before {
+    --steps: 26;
+    background-color: var(--bgcolor);
+    animation: typewriter calc(var(--steps)*0.05s) 1.5s steps(var(--steps)) forwards;
+}
+
+
+/* third */
+.greeting-text__third-line {
+    position: relative;
+}
+
+.greeting-text__third-line::before,
+.greeting-text__third-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.greeting-text__third-line::before {
+    --steps: 29;
+    background-color: var(--bgcolor);
+    animation: typewriter calc(var(--steps)*0.05s) 3s steps(var(--steps)) forwards;
+}
+
+
+
+/* fourth */
+.greeting-text__fourth-line {
+    position: relative;
+}
+
+.greeting-text__fourth-line::before,
+.greeting-text__fourth-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.greeting-text__fourth-line::before {
+    --steps: 24;
+    background-color: var(--bgcolor);
+    animation: typewriter calc(var(--steps)*0.05s) 5s steps(var(--steps)) forwards;
+}
+
+
+/* cat */
+.cat-emoji {
+    opacity: 0;
+    animation: showUp 1s 5.5s steps(1,end) forwards;
+}
+
+.canvas-container {
+    height: 300px;
+}
+
+#canvas1 {
+    height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.rotate-js,
+.rotate-css {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.rotate-js::before,
+.rotate-css::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 70px;
+    background: linear-gradient(rgb(255, 0, 0),rgb(201, 74, 24));
+    animation: rotating 2s linear infinite;
+}
+.rotate-js::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #121212;
+    background-size: contain;
+    background-image: var(--img, );
+}
+
+.rotate-css::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: var(--color, #121212);
+    background-size: contain;
+    background-image: var(--img, );
+}
+
+
+@keyframes rotating {
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+
+
+@keyframes typewriter {
+    to { left: 100% }
+}
+
+@keyframes showUp {
+    to { opacity: 1; }
+    
+}
+
+@keyframes rotating {
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
