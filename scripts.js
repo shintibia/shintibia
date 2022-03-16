@@ -103,3 +103,5 @@ function closeNav(e) {
     }
 
 }
+
+window.onload = init
