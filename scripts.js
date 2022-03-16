@@ -14,7 +14,6 @@ let observer = new IntersectionObserver(navCheck, options)
 const navbar = document.querySelector('.navbar-nav')
 const copyIcon = document.querySelectorAll('.copy-icon')
 
-character.onload = drawImage
 window.addEventListener('DOMContentLoaded', startApp)
 hamburger.addEventListener('click', mobileNav)
 document.addEventListener('click', closeNav)
@@ -23,6 +22,7 @@ document.addEventListener('click', closeNav)
 function startApp() {
     setInterval(emoji, 3000)
     drawImage()
+    character.onload = drawImage
     animate()
     loadTech()
     saveEquip()
