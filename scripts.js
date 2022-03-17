@@ -21,7 +21,7 @@ document.addEventListener('click', closeNav)
 
 function startApp() {
     setInterval(emoji, 3000)
-    drawCharacter()
+    // drawCharacter()
     animate()
     loadTech()
     saveEquip()
@@ -102,5 +102,4 @@ function closeNav(e) {
     }
 }
 
-window.onload = draw
 window.onload = drawCharacter
