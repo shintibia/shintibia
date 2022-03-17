@@ -1,7 +1,7 @@
 import { equip, equipUrl } from './items.js'
 
 const canvas = document.getElementById('canvas1')
-export const character = document.getElementById('dark-wizard')
+const character = document.getElementById('dark-wizard')
 const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 60
 const CANVAS_HEIGHT = canvas.height = 104
@@ -12,18 +12,9 @@ let gameFrame = 0;
 let staggerFrames = 0
 
 export function drawCharacter() {
-    character.onload = draw
-    character.src = './data/img/idle/Idlebw.png'
-    ctx.filter = 'none'
-    animate()
-    draw()
-    character.src = './data/img/idle/Idlebw.png'
-    draw()
-}
-
-export function draw () {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     ctx.drawImage(character, frameX * spriteSizeX, 0, spriteSizeX, spriteSizeY, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
+    ctx.filter = 'none'
 }
 
 export function animate() {
@@ -63,7 +54,7 @@ export function loadCharacter() {
             character.src = './data/img/idle/Idlebw.png'
         }
         if (equipUrl.some(item => item.techId == 'js')) {
-            staggerFrames = 17
+            staggerFrames = 10
         } else {
             staggerFrames = 0
         }

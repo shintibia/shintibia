@@ -1,4 +1,4 @@
-import { animate, drawCharacter, character, draw } from "./character.js"
+import { animate, drawCharacter } from "./character.js"
 import { loadTech, saveEquip, saveTech, suggest } from "./items.js"
 import { loadProjects, projectItems } from "./projects.js"
 
@@ -20,14 +20,12 @@ document.addEventListener('click', closeNav)
 
 function startApp() {
     setInterval(emoji, 3000)
-    drawCharacter()
-    // animate()
+    animate()
     loadTech()
     saveEquip()
     saveTech()
     loadProjects()
     copyInfo()
-    
 }
 
 function emoji() {
@@ -102,6 +100,9 @@ function closeNav(e) {
     }
 }
 
-
-draw()
-drawCharacter()
+window.onload = function() {
+	if(!window.location.hash) {
+		window.location = window.location + '#loaded';
+		window.location.reload();
+	}
+}
