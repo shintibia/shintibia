@@ -22,7 +22,6 @@ document.addEventListener('click', closeNav)
 function startApp() {
     setInterval(emoji, 3000)
     drawImage()
-    character.onload = drawImage
     animate()
     loadTech()
     saveEquip()
