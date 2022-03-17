@@ -102,4 +102,5 @@ function closeNav(e) {
     }
 }
 
-window.onload = drawCharacter
+window.addEventListener = ('DOMContentLoaded', draw)
+window.addEventListener = ('DOMContentLoaded', drawCharacter)
