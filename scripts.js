@@ -21,8 +21,8 @@ document.addEventListener('click', closeNav)
 
 function startApp() {
     setInterval(emoji, 3000)
-    // drawCharacter()
-    animate()
+    drawCharacter()
+    // animate()
     loadTech()
     saveEquip()
     saveTech()
@@ -101,6 +101,3 @@ function closeNav(e) {
         hamburger.style.backgroundColor = ''
     }
 }
-
-window.addEventListener = ('DOMContentLoaded', draw)
-window.addEventListener = ('DOMContentLoaded', drawCharacter)
