@@ -15,6 +15,7 @@ export function drawCharacter() {
     character.onload = draw
     character.src = './data/img/idle/Idlebw.png'
     ctx.filter = 'none'
+    // draw()
     // animate()
 }
 

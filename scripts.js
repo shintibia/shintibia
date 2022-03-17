@@ -21,13 +21,13 @@ document.addEventListener('click', closeNav)
 
 function startApp() {
     setInterval(emoji, 3000)
-    drawCharacter()
     // animate()
     loadTech()
     saveEquip()
     saveTech()
     loadProjects()
     copyInfo()
+    drawCharacter()
 }
 
 function emoji() {
