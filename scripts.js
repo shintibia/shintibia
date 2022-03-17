@@ -18,16 +18,16 @@ window.addEventListener('DOMContentLoaded', startApp)
 hamburger.addEventListener('click', mobileNav)
 document.addEventListener('click', closeNav)
 
-
 function startApp() {
     setInterval(emoji, 3000)
+    drawCharacter()
     // animate()
     loadTech()
     saveEquip()
     saveTech()
     loadProjects()
     copyInfo()
-    drawCharacter()
+    
 }
 
 function emoji() {
@@ -101,3 +101,7 @@ function closeNav(e) {
         hamburger.style.backgroundColor = ''
     }
 }
+
+
+draw()
+drawCharacter()

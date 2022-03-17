@@ -15,8 +15,10 @@ export function drawCharacter() {
     character.onload = draw
     character.src = './data/img/idle/Idlebw.png'
     ctx.filter = 'none'
-    // draw()
-    // animate()
+    animate()
+    draw()
+    character.src = './data/img/idle/Idlebw.png'
+    draw()
 }
 
 export function draw () {
@@ -61,7 +63,7 @@ export function loadCharacter() {
             character.src = './data/img/idle/Idlebw.png'
         }
         if (equipUrl.some(item => item.techId == 'js')) {
-            staggerFrames = 10
+            staggerFrames = 17
         } else {
             staggerFrames = 0
         }
