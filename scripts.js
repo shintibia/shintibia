@@ -1,4 +1,4 @@
-import { animate, drawCharacter, character } from "./character.js"
+import { animate, drawCharacter, character, draw } from "./character.js"
 import { loadTech, saveEquip, saveTech, suggest } from "./items.js"
 import { loadProjects, projectItems } from "./projects.js"
 
@@ -100,5 +100,7 @@ function closeNav(e) {
         navbar.style.transform = 'scale(0)'
         hamburger.style.backgroundColor = ''
     }
-
 }
+
+window.onload = draw
+window.onload = drawCharacter
