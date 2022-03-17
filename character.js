@@ -14,7 +14,8 @@ let staggerFrames = 0
 export function drawCharacter() {
     character.onload = draw
     character.src = './data/img/idle/Idlebw.png'
-    ctx.filter = 'none'
+    // ctx.filter = 'none'
+    draw()
 }
 
 export function draw () {
@@ -25,7 +26,7 @@ export function draw () {
 export function animate() {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     ctx.drawImage(character, frameX * spriteSizeX, 0, spriteSizeX, spriteSizeY, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    ctx.filter = 'none'
+    // ctx.filter = 'none'
     if (gameFrame % staggerFrames == 0) {
         if (frameX < 7) {
             frameX++
@@ -46,7 +47,7 @@ export function animateInvert() {
 
 export function animateClear() {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    ctx.filter = 'none'
+    // ctx.filter = 'none'
     ctx.drawImage(character, frameX * spriteSizeX, 0, spriteSizeX, spriteSizeY, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     requestAnimationFrame(animateClear)
 }
