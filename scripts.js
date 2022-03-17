@@ -1,4 +1,4 @@
-import { animate, drawImage, character } from "./character.js"
+import { animate, drawCharacter, character } from "./character.js"
 import { loadTech, saveEquip, saveTech, suggest } from "./items.js"
 import { loadProjects, projectItems } from "./projects.js"
 
@@ -21,7 +21,7 @@ document.addEventListener('click', closeNav)
 
 function startApp() {
     setInterval(emoji, 3000)
-    drawImage()
+    drawCharacter()
     animate()
     loadTech()
     saveEquip()
@@ -103,4 +103,6 @@ function closeNav(e) {
 
 }
 
-window.onload = drawImage
+window.onload = function () {
+    drawCharacter()
+}

@@ -11,12 +11,12 @@ let frameX = 0
 let gameFrame = 0;
 let staggerFrames = 0
 
-export function drawImage() {
+export function drawCharacter() {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    character.src = './data/img/idle/Idlebw.png'
     character.onload = function () {
         ctx.drawImage(character, frameX * spriteSizeX, 0, spriteSizeX, spriteSizeY, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     }
+    character.src = './data/img/idle/Idlebw.png'
     ctx.filter = 'none'
 }
 
