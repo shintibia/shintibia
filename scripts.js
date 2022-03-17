@@ -102,7 +102,3 @@ function closeNav(e) {
     }
 
 }
-
-window.onload = function () {
-    drawCharacter()
-}
