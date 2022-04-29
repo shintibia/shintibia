@@ -3,6 +3,11 @@ const pageBtns = document.querySelectorAll('.page-btn')
 
 const projectUrl = [
     {
+        url: 'url(./data/img/projects/covidpixel.png)',
+        id: 'covid',
+        link: 'https://shintibia.github.io/covid-19-vn/'
+    },
+    {
         url: 'url(./data/img/projects/sputifapixel.png)',
         id: 'sputifa',
         link: 'https://shintibia.github.io/sputifa/'
